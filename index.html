@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/gif" href="favicon.gif">
+
+   <link rel="stylesheet" href="css/topnav.css?v=2">
+   <link rel="stylesheet" href="css/homecanvas.css?v=2">
+
+   <title>Webxel LevEdit</title>
+</head>
+
+<body>
+
+   <div class="upload-field">
+      <input class="file " type="file" id="myFile" name="filename">
+
+      <button class="export-btn" type="export" class="export-btn">Save as JSON file</button>
+
+      <select class="option-btn" name="options" id="options">
+         <option value="8">Player</option>
+         <option value="7">Gem</option>
+         <option value="5">Gate</option>
+         <option value="4">Wall</option>
+         <option value="3">Box</option>
+         <option value="2">Button</option>
+      </select>
+      <div class="xy-btn">
+         <p>x:</p>
+         <input type="text" id="xInput" style="width: 40px" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+         <p>y:</p>
+   
+      <input type="text" id="yInput" style="width: 40px" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+      </div>
+      <button class="add-btn" type="add" id="addButton" class="add-btn">Add</button>
+      <button class="remove-btn" type="remove" id="removeButton" class="remove-btn">Remove</button>
+      <button class="test-btn" id="testButton">Test</button>
+   </div>
+
+   <div class="gradient"></div>
+   <div class="vignette"></div>
+   <nav id="topnav">
+      <img src="./images/logo.png" class="logo" height="40px">
+      <!--div class="buttons">
+         <a id="about" class="nav-link" href="logout.php">Log out</a>
+         <a id="about" class="nav-link"> <?php echo $user_data['user_name']; ?></a>
+      </div-->
+   </nav>
+   <canvas id="canvas"></canvas>
+   <p id="scoreDisplay"></p>
+   <button id="muteButton"></button>
+   <script src="scripts/game.js"></script>
+
+</body>
+
+</html>

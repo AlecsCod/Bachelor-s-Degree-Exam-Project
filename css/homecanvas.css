@@ -1,0 +1,188 @@
+* {
+    font-family: Retro_Gaming;
+}
+
+body {
+    background: #263030 url(../images/gameAssets/tiles.png);
+    background-size: 80px;
+    color: #263030;
+    image-rendering: pixelated;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+option {
+    font: 1em sans-serif;
+}
+
+.gradient {
+    background-image: linear-gradient(180deg, #263030, #060909);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 90%;
+}
+
+.vignette {
+    background-image: url(../images/vignette.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#canvas {
+    width: auto;
+    height: 400px;
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    background-color: #000;
+    background-image: url(../images/gameAssets/tiles.png);
+    background-size: 40px;
+    z-index: 1;
+ }
+
+ #muteButton {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../images/volume_toggle.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: none;
+    z-index: 2;
+    top: 500px;
+    left: 780px;
+ }
+
+ #scoreDisplay {
+    width: auto;
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    z-index: 2;
+    top: 514px;
+    left: 160px;
+    text-shadow: -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 1px 1px 0px #000,
+                    -1px 0px 0px #000, 1px 0px 0px #000, 0px -1px 0px #000, 0px 1px 0px #000;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    scale: 1.25;
+ }
+
+ .upload-field{
+    background-color: white;
+    top: 120px;
+    left: 880px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    background: #e0e0e0;
+    overflow: hidden;
+    justify-content: space-evenly;
+    z-index: 100;
+}
+ 
+ @font-face {
+    font-family: Retro_Gaming;
+    src: url(../fonts/Retro\ Gaming.ttf);
+}
+.file{
+    top:20px;
+    position: relative;
+    display: inline-block;
+    /*! margin: auto; */
+ display: flex;
+    left: 96px;
+}
+.export-btn{
+    top: 50px;
+    left: 94px;
+    margin: auto;
+    display:inline-block;
+    bottom: 50px;
+    position: relative;
+	background-color:#000000;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:9px 23px;
+	text-align: center;
+}
+.option-btn{
+    top: 80px;
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    display: flex;
+}
+.add-btn{
+    width: 120px;
+    left: 50px;
+    top: 150px;
+    margin: auto;
+    bottom: 50px;
+    position: relative;
+	background-color:#000000;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:9px 23px;
+	text-align: center;
+}
+.remove-btn{
+    width: 120px;
+    left: 100px;
+    top: 150px;
+    margin: auto;
+    display:inline-block;
+    bottom: 50px;
+    position: relative;
+	background-color:#000000;
+	border:1px solid #241d13;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:9px 23px;
+	text-align: center;
+}
+.test-btn{
+    width: 120px;
+    top: 220px;
+    right: 112px;
+    margin: auto;
+    display:inline-block;
+    bottom: 50px;
+    position: relative;
+	background-color:#000000;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:9px 23px;
+	text-align: center;
+}
+.xy-btn{
+    top: 100px;
+    left:130px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    
+}
